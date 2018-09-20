@@ -1,0 +1,11 @@
+
+language: python
+
+python:
+    - "3.6"
+
+script:
+  - nosetests --with-coverage --cover-package=pyawair
+
+after_success:
+    - coveralls
