@@ -8,13 +8,15 @@ def get_all_devices(auth):
     device_list = json.loads(r.text)
     return device_list
 
-def get_current_data(auth, device_name=None, serial=None,):
+def get_current_data(auth, device_name=None, serial=None):
     url = 'https://api.uhooinc.com/v1/getlatestdata'
-    device_list = get_all_devices(auth)
     if serial is None:
+        device_list = get_all_devices(auth)
         for dev in device_list:
             if dev['deviceName'] == device_name:
                 serial = dev['serialNumber']
+            else:
+                return "Device Doesn't Exist"
     else:
         serial = serial
     data = {'username': auth.email, 'password': auth.hexdigest, 'serialNumber': serial}
@@ -22,23 +24,30 @@ def get_current_data(auth, device_name=None, serial=None,):
     current_data = json.loads(r.text)
     return current_data
 
-def get_hourly_data(auth, device_name):
+def get_hourly_data(auth, device_name=None, serial=None):
     url = 'https://api.uhooinc.com/v1/gethourlydata'
-    device_list = get_all_devices(auth)
-    for dev in device_list:
-        if dev['deviceName'] == device_name:
-            serial = dev['serialNumber']
+    if serial is None:
+        device_list = get_all_devices(auth)
+        for dev in device_list:
+            if dev['deviceName'] == device_name:
+                serial = dev['serialNumber']
+            else:
+                return "Device Doesn't Exist"
     data = {'username': auth.email, 'password': auth.hexdigest, 'serialNumber': serial}
     r = requests.post(url, data=data)
     current_data = json.loads(r.text)
     return current_data
 
-def get_daily_data(auth, device_name):
+def get_daily_data(auth, device_name=None, serial=None):
     url = 'https://api.uhooinc.com/v1/getdailydata'
     device_list = get_all_devices(auth)
-    for dev in device_list:
-        if dev['deviceName'] == device_name:
-            serial = dev['serialNumber']
+    if serial is None:
+        device_list = get_all_devices(auth)
+        for dev in device_list:
+            if dev['deviceName'] == device_name:
+                serial = dev['serialNumber']
+            else:
+                return "Device Doesn't Exist"
     data = {'username': auth.email, 'password': auth.hexdigest, 'serialNumber': serial}
     r = requests.post(url, data=data)
     current_data = json.loads(r.text)
