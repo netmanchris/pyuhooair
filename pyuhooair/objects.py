@@ -69,6 +69,7 @@ class UhooDev:
         self._data['ozone'] = current_data['Ozone']
         self._data['NO2'] = current_data['NO2']
         self._data['DateTime'] = current_data['DateTime']
+        self._data['Temperature'] = current_data['Temperature']
         self._last_update = datetime.datetime.now()  # records the time of the last update
 
 
