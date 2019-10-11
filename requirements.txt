@@ -2,3 +2,4 @@ nose
 requests
 sphinxcontrib-napoleon
 python-coveralls
+pyvcr

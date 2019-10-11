@@ -13,6 +13,15 @@ except:
     from secret import *
 from pyuhooair.data import *
 
+import vcr
+my_vcr = vcr.VCR(
+    serializer='json',
+    cassette_library_dir='./test_pyhpecfm/fixtures/cassettes',
+    record_mode='new_episodes',
+    match_on=['uri', 'method'],
+)
+
+
 auth = UhooAuth(email, password)
 
 class TestGetAllDevices(TestCase):
@@ -20,6 +29,7 @@ class TestGetAllDevices(TestCase):
     Test Case for pyawair.data get_current_air_data function
     """
 
+    #@vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes')
     def test_GetAllDevices(self):
         """
         """
@@ -165,8 +175,8 @@ class TestDailyData(TestCase):
         dev1 = devices[0]
         daily_data = get_daily_data(auth, serial=dev1['serialNumber'])
         print(daily_data)
-        self.assertEqual(type(daily_data), list)
-        keys = daily_data[0].keys()
+        self.assertEqual(type(daily_data), dict)
+        keys = daily_data.keys()
         self.assertIn('Ozone', keys)
         self.assertIn('Timestamp', keys)
         self.assertIn('TVOC', keys)
