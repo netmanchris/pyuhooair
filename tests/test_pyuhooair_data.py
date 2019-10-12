@@ -29,7 +29,7 @@ class TestGetAllDevices(TestCase):
     Test Case for pyawair.data get_current_air_data function
     """
 
-    #@vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',filter_post_data_parameters=['username','password'])
     def test_GetAllDevices(self):
         """
         """
@@ -46,6 +46,8 @@ class TestCurrentData(TestCase):
     Test Case for pyawair.data get_current_air_data function
     """
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetCurrentData_id_pos(self):
         """
         """
@@ -65,6 +67,8 @@ class TestCurrentData(TestCase):
         self.assertIn('Temperature', keys)
         self.assertIn('DateTime', keys)
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetCurrentData_id_neg(self):
         """
         """
@@ -73,6 +77,8 @@ class TestCurrentData(TestCase):
         current_data = get_current_data(auth, serial='Doesnt Exist')
         self.assertEqual(current_data,  {'message': 'Incorrect serialNumber', 'status': 2})
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetCurrentData_name_pos(self):
         """
         """
@@ -92,6 +98,8 @@ class TestCurrentData(TestCase):
         self.assertIn('Temperature', keys)
         self.assertIn('DateTime', keys)
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetCurrentData_name_neg(self):
         """
         """
@@ -108,6 +116,8 @@ class TestHourlyData(TestCase):
     Test Case for pyawair.data get_hourly_air_data function
     """
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetHourlyData_id_pos(self):
         """
         """
@@ -128,13 +138,16 @@ class TestHourlyData(TestCase):
         self.assertIn('Temperature', keys)
         self.assertIn('DateTime', keys)
 
-
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetHourlyData_id_neg(self):
         """
         """
         hourly_data = get_hourly_data(auth, serial='Doesnt Exist')
         self.assertEqual(hourly_data,  {'message': 'Incorrect serialNumber', 'status': 2})
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetHourlyData_name_pos(self):
         """
         """
@@ -154,6 +167,8 @@ class TestHourlyData(TestCase):
         self.assertIn('Temperature', keys)
         self.assertIn('DateTime', keys)
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetHourlyData_name_neg(self):
         """
         """
@@ -168,6 +183,8 @@ class TestDailyData(TestCase):
     Test Case for pyawair.data get_daily_air_data function
     """
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetDailyData_id_pos(self):
         """
         """
@@ -175,8 +192,8 @@ class TestDailyData(TestCase):
         dev1 = devices[0]
         daily_data = get_daily_data(auth, serial=dev1['serialNumber'])
         print(daily_data)
-        self.assertEqual(type(daily_data), dict)
-        keys = daily_data.keys()
+        self.assertEqual(type(daily_data), list)
+        keys = daily_data[0].keys()
         self.assertIn('Ozone', keys)
         self.assertIn('Timestamp', keys)
         self.assertIn('TVOC', keys)
@@ -188,13 +205,16 @@ class TestDailyData(TestCase):
         self.assertIn('Temperature', keys)
         self.assertIn('DateTime', keys)
 
-
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetDailyData_id_neg(self):
         """
         """
         daily_data = get_daily_data(auth, serial='Doesnt Exist')
         self.assertEqual(daily_data, {'message': 'Incorrect serialNumber', 'status': 2})
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetDailyData_name_pos(self):
         """
         """
@@ -214,6 +234,8 @@ class TestDailyData(TestCase):
         self.assertIn('Temperature', keys)
         self.assertIn('DateTime', keys)
 
+    @vcr.use_cassette(cassette_library_dir='./tests/fixtures/cassettes',
+                      filter_post_data_parameters=['username', 'password'])
     def test_GetDailyData_name_neg(self):
         """
         """
