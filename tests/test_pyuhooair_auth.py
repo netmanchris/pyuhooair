@@ -9,9 +9,15 @@ import os
 try:
     email = os.environ['email']
     password = os.environ['password']
-except:
-    from secret import *
 
+
+import vcr
+my_vcr = vcr.VCR(
+    serializer='json',
+    cassette_library_dir='./test_pyhpecfm/fixtures/cassettes',
+    record_mode='new_episodes',
+    match_on=['uri', 'method'],
+)
 
 class TestCreateuHooAuthObject(TestCase):
     """

@@ -1,0 +1,241 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:47 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AtrWKrJw9zawMQrCcQXwxeGJZjjwcKNNw.t2huZfN5IrBHu6qSKJhZme0fsRTqbuNW8HO%2BF%2FaBXG4;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:48 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3Arol4aRZXfta_iclNcg8iQdoEiKX5K9Al.IE5zMOeC6xNxTVIbFq6SWHkr3hxUcmGVArfBCJyUxd0;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: serialNumber=49ff70067580485640381667
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '141'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/gethourlydata
+  response:
+    body:
+      string: '[{"Temperature":"23.5","Relative Humidity":"43.8","PM2.5":"2.8","TVOC":"76.0","CO2":"640.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.7","NO2":"0.4","Timestamp":1570888361,"DateTime":"2019-10-12
+        09:52"},{"Temperature":"23.5","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"76.0","CO2":"500.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.9","NO2":"0.1","Timestamp":1570888421,"DateTime":"2019-10-12
+        09:53"},{"Temperature":"23.5","Relative Humidity":"43.7","PM2.5":"1.2","TVOC":"77.0","CO2":"532.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.9","NO2":"0.6","Timestamp":1570888481,"DateTime":"2019-10-12
+        09:54"},{"Temperature":"23.5","Relative Humidity":"43.7","PM2.5":"1.3","TVOC":"77.0","CO2":"567.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.6","Timestamp":1570888541,"DateTime":"2019-10-12
+        09:55"},{"Temperature":"23.5","Relative Humidity":"43.5","PM2.5":"1.0","TVOC":"78.0","CO2":"601.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.1","Timestamp":1570888601,"DateTime":"2019-10-12
+        09:56"},{"Temperature":"23.5","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"78.0","CO2":"711.0","CO":"0.0","Air
+        Pressure":"1014.6","Ozone":"8.8","NO2":"0.3","Timestamp":1570888661,"DateTime":"2019-10-12
+        09:57"},{"Temperature":"23.5","Relative Humidity":"43.5","PM2.5":"1.0","TVOC":"79.0","CO2":"662.0","CO":"0.0","Air
+        Pressure":"1014.6","Ozone":"8.7","NO2":"0.4","Timestamp":1570888721,"DateTime":"2019-10-12
+        09:58"},{"Temperature":"23.5","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"81.0","CO2":"632.0","CO":"0.0","Air
+        Pressure":"1014.6","Ozone":"8.7","NO2":"0.6","Timestamp":1570888781,"DateTime":"2019-10-12
+        09:59"},{"Temperature":"23.5","Relative Humidity":"43.6","PM2.5":"2.4","TVOC":"80.0","CO2":"626.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.0","Timestamp":1570888841,"DateTime":"2019-10-12
+        10:00"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"80.0","CO2":"600.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.2","Timestamp":1570888901,"DateTime":"2019-10-12
+        10:01"},{"Temperature":"23.4","Relative Humidity":"43.9","PM2.5":"4.4","TVOC":"80.0","CO2":"587.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.5","Timestamp":1570888961,"DateTime":"2019-10-12
+        10:02"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"80.0","CO2":"639.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.6","Timestamp":1570889021,"DateTime":"2019-10-12
+        10:03"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"2.5","TVOC":"80.0","CO2":"662.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.0","Timestamp":1570889081,"DateTime":"2019-10-12
+        10:04"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"82.0","CO2":"676.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.4","Timestamp":1570889141,"DateTime":"2019-10-12
+        10:05"},{"Temperature":"23.4","Relative Humidity":"43.9","PM2.5":"1.3","TVOC":"82.0","CO2":"515.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.1","Timestamp":1570889201,"DateTime":"2019-10-12
+        10:06"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"82.0","CO2":"615.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.3","Timestamp":1570889261,"DateTime":"2019-10-12
+        10:07"},{"Temperature":"23.4","Relative Humidity":"43.9","PM2.5":"1.0","TVOC":"82.0","CO2":"614.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.0","Timestamp":1570889321,"DateTime":"2019-10-12
+        10:08"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"1.1","TVOC":"82.0","CO2":"615.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.3","Timestamp":1570889381,"DateTime":"2019-10-12
+        10:09"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"82.0","CO2":"667.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.2","Timestamp":1570889441,"DateTime":"2019-10-12
+        10:10"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"82.0","CO2":"515.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.5","Timestamp":1570889501,"DateTime":"2019-10-12
+        10:11"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.4","TVOC":"82.0","CO2":"557.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.8","Timestamp":1570889561,"DateTime":"2019-10-12
+        10:12"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"83.0","CO2":"597.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.1","Timestamp":1570889621,"DateTime":"2019-10-12
+        10:13"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"82.0","CO2":"591.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.9","Timestamp":1570889681,"DateTime":"2019-10-12
+        10:14"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"82.0","CO2":"630.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.3","Timestamp":1570889741,"DateTime":"2019-10-12
+        10:15"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"2.0","TVOC":"82.0","CO2":"594.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.9","Timestamp":1570889801,"DateTime":"2019-10-12
+        10:16"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"1.1","TVOC":"80.0","CO2":"568.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.8","Timestamp":1570889861,"DateTime":"2019-10-12
+        10:17"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"3.3","TVOC":"82.0","CO2":"624.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.7","Timestamp":1570889921,"DateTime":"2019-10-12
+        10:18"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"80.0","CO2":"652.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.9","NO2":"0.1","Timestamp":1570889981,"DateTime":"2019-10-12
+        10:19"},{"Temperature":"23.4","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"80.0","CO2":"633.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.9","NO2":"0.3","Timestamp":1570890041,"DateTime":"2019-10-12
+        10:20"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"6.5","TVOC":"80.0","CO2":"644.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.7","Timestamp":1570890101,"DateTime":"2019-10-12
+        10:21"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"79.0","CO2":"563.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.6","Timestamp":1570890161,"DateTime":"2019-10-12
+        10:22"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"4.3","TVOC":"79.0","CO2":"681.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.4","Timestamp":1570890221,"DateTime":"2019-10-12
+        10:23"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"2.1","TVOC":"79.0","CO2":"586.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.3","Timestamp":1570890281,"DateTime":"2019-10-12
+        10:24"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"5.9","TVOC":"78.0","CO2":"554.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.3","Timestamp":1570890341,"DateTime":"2019-10-12
+        10:25"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"78.0","CO2":"556.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.7","Timestamp":1570890401,"DateTime":"2019-10-12
+        10:26"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"3.1","TVOC":"78.0","CO2":"611.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.4","Timestamp":1570890461,"DateTime":"2019-10-12
+        10:27"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"4.7","TVOC":"78.0","CO2":"549.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.5","Timestamp":1570890521,"DateTime":"2019-10-12
+        10:28"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"2.4","TVOC":"78.0","CO2":"589.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.8","Timestamp":1570890581,"DateTime":"2019-10-12
+        10:29"},{"Temperature":"23.3","Relative Humidity":"43.9","PM2.5":"2.2","TVOC":"78.0","CO2":"629.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.8","NO2":"0.7","Timestamp":1570890641,"DateTime":"2019-10-12
+        10:30"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"84.0","CO2":"584.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.8","NO2":"0.9","Timestamp":1570890701,"DateTime":"2019-10-12
+        10:31"},{"Temperature":"23.3","Relative Humidity":"43.9","PM2.5":"1.0","TVOC":"78.0","CO2":"553.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.9","NO2":"0.5","Timestamp":1570890761,"DateTime":"2019-10-12
+        10:32"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"78.0","CO2":"559.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.9","NO2":"0.2","Timestamp":1570890821,"DateTime":"2019-10-12
+        10:33"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"2.3","TVOC":"78.0","CO2":"532.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.1","Timestamp":1570890881,"DateTime":"2019-10-12
+        10:34"},{"Temperature":"23.4","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"77.0","CO2":"589.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.1","Timestamp":1570890941,"DateTime":"2019-10-12
+        10:35"},{"Temperature":"23.4","Relative Humidity":"43.8","PM2.5":"1.3","TVOC":"77.0","CO2":"642.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.0","Timestamp":1570891001,"DateTime":"2019-10-12
+        10:36"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"77.0","CO2":"627.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.1","Timestamp":1570891061,"DateTime":"2019-10-12
+        10:37"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"3.1","TVOC":"77.0","CO2":"615.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.3","Timestamp":1570891121,"DateTime":"2019-10-12
+        10:38"},{"Temperature":"23.3","Relative Humidity":"43.5","PM2.5":"1.0","TVOC":"77.0","CO2":"594.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.2","Timestamp":1570891181,"DateTime":"2019-10-12
+        10:39"},{"Temperature":"23.4","Relative Humidity":"43.5","PM2.5":"1.0","TVOC":"77.0","CO2":"636.0","CO":"0.0","Air
+        Pressure":"1014.5","Ozone":"8.8","NO2":"0.1","Timestamp":1570891241,"DateTime":"2019-10-12
+        10:40"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"76.0","CO2":"475.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.7","Timestamp":1570891301,"DateTime":"2019-10-12
+        10:41"},{"Temperature":"23.3","Relative Humidity":"43.6","PM2.5":"2.7","TVOC":"75.0","CO2":"511.0","CO":"0.0","Air
+        Pressure":"1014.4","Ozone":"8.8","NO2":"0.5","Timestamp":1570891361,"DateTime":"2019-10-12
+        10:42"},{"Temperature":"23.3","Relative Humidity":"43.3","PM2.5":"1.0","TVOC":"75.0","CO2":"532.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.4","Timestamp":1570891421,"DateTime":"2019-10-12
+        10:43"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"81.0","CO2":"593.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.7","Timestamp":1570891481,"DateTime":"2019-10-12
+        10:44"},{"Temperature":"23.3","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"79.0","CO2":"668.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.8","NO2":"0.1","Timestamp":1570891541,"DateTime":"2019-10-12
+        10:45"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"78.0","CO2":"658.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.9","NO2":"0.7","Timestamp":1570891601,"DateTime":"2019-10-12
+        10:46"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"78.0","CO2":"610.0","CO":"0.0","Air
+        Pressure":"1014.3","Ozone":"8.9","NO2":"0.2","Timestamp":1570891661,"DateTime":"2019-10-12
+        10:47"},{"Temperature":"23.3","Relative Humidity":"43.6","PM2.5":"1.0","TVOC":"78.0","CO2":"676.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.8","NO2":"0.3","Timestamp":1570891721,"DateTime":"2019-10-12
+        10:48"},{"Temperature":"23.3","Relative Humidity":"43.8","PM2.5":"1.0","TVOC":"77.0","CO2":"599.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.8","NO2":"0.0","Timestamp":1570891781,"DateTime":"2019-10-12
+        10:49"},{"Temperature":"23.3","Relative Humidity":"43.9","PM2.5":"1.0","TVOC":"77.0","CO2":"655.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.8","NO2":"0.3","Timestamp":1570891841,"DateTime":"2019-10-12
+        10:50"},{"Temperature":"23.3","Relative Humidity":"43.7","PM2.5":"1.0","TVOC":"76.0","CO2":"666.0","CO":"0.0","Air
+        Pressure":"1014.2","Ozone":"8.8","NO2":"0.3","Timestamp":1570891901,"DateTime":"2019-10-12
+        10:51"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '12361'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:50 GMT
+      ETag:
+      - W/"3049-Ze+AE+sfGVeb0WUr6NE5CA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AakZZcgEe1NrcAsM8P9txdszNyyqiki48.2gAdDVxSC49RAseQVvNcV4UzWclcePSOghDy4jX%2Bnnw;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+version: 1

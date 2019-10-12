@@ -1,0 +1,82 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:52:22 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3A5LnyML8oY0mCZgxegzU-2wvDz42QL2fY.SgFqd4W1S%2FqN5m1pMxmrlKfOXYBmoEu9fNomcY02O3U;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: serialNumber=49ff70067580485640381667
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '141'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getlatestdata
+  response:
+    body:
+      string: '{"PM2.5":"1","Temperature":"23.3","Relative Humidity":"43.7","Air Pressure":"1014.2","TVOC":"76","CO2":"666","CO":"0","Ozone":"8.8","NO2":"0.3","Timestamp":1570891901,"DateTime":"2019-10-12
+        10:51"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '197'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:52:23 GMT
+      ETag:
+      - W/"c5-afv+wNchYaxpIKl7iJTYbA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3Ap6yIxQvw8SNXs3-fqyG7xpF0BD0CTQ6d.F1NCcg6qjtSmelXNzaWy55sexIkyprD2nmNnhbxLrys;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+version: 1
