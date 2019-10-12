@@ -1,0 +1,81 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:52:20 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AvOF2jviLPNcfQbc9bpnRV1-NDX0y9GUs.jCTgCHZAY1cycnfWWLiAw6YbK69YuSsVGUiSXwcbgEI;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: serialNumber=Doesnt+Exist
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '129'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getlatestdata
+  response:
+    body:
+      string: '{"status":2,"message":"Incorrect serialNumber"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:52:21 GMT
+      ETag:
+      - W/"2f-OndtP+XxgUZOt5VlLtXWfA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AizladxqVz0jYzDhuYSBcJOOi2PXGNvNs.N3Qv2FRUYS60l%2Bw%2Ft0f7WXLMjL36BNvhdcHyHkPGROM;
+        Path=/; HttpOnly
+    status:
+      code: 400
+      message: Bad Request
+version: 1

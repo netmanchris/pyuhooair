@@ -1,0 +1,41 @@
+interactions:
+- request:
+    body: serialNumber=Doesnt+Exist
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '129'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/gethourlydata
+  response:
+    body:
+      string: '{"status":2,"message":"Incorrect serialNumber"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:43 GMT
+      ETag:
+      - W/"2f-OndtP+XxgUZOt5VlLtXWfA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3Ao0zMa0-FlbYT6RUyc3AC6sQJfxe6ymdG.uH3G3GxeWOyxaNSlPD%2Fod%2BMhoHi2VTtVCbqGfZ1FhPc;
+        Path=/; HttpOnly
+    status:
+      code: 400
+      message: Bad Request
+version: 1

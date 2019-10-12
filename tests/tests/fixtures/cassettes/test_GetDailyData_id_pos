@@ -1,0 +1,141 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:32 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3Ahb-yPlihuYS-JWJM7DJCR0DLYjhVDa0k.%2B42%2B9Zcs%2FqJCV0g6gefi9gPJPvFNlw0OBdwUhOEVQWI;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:33 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AFONnxU9EwZPHT3VH4eowI6M1aLQj3_75.A2T5uMxcqkShwWK8x4wdhP%2BrT1EnUQ1nKsJ46%2F%2BbP2k;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: serialNumber=49ff70067580485640381667
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '141'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdailydata
+  response:
+    body:
+      string: '[{"Temperature":"23.9","Relative Humidity":"48.1","PM2.5":"1.0","TVOC":"199.2","CO2":"1222.2","CO":"0.0","Air
+        Pressure":"1018.6","Ozone":"8.4","NO2":"0.5","Timestamp":1570852800,"DateTime":"2019-10-12
+        00:00"},{"Temperature":"23.8","Relative Humidity":"48.1","PM2.5":"1.0","TVOC":"251.9","CO2":"1178.8","CO":"0.0","Air
+        Pressure":"1018.1","Ozone":"8.4","NO2":"0.5","Timestamp":1570856400,"DateTime":"2019-10-12
+        01:00"},{"Temperature":"23.7","Relative Humidity":"48.0","PM2.5":"1.1","TVOC":"176.6","CO2":"1189.3","CO":"0.0","Air
+        Pressure":"1017.4","Ozone":"8.5","NO2":"0.5","Timestamp":1570860000,"DateTime":"2019-10-12
+        02:00"},{"Temperature":"23.6","Relative Humidity":"48.2","PM2.5":"1.0","TVOC":"122.7","CO2":"1188.2","CO":"0.0","Air
+        Pressure":"1016.5","Ozone":"8.5","NO2":"0.5","Timestamp":1570863600,"DateTime":"2019-10-12
+        03:00"},{"Temperature":"23.5","Relative Humidity":"47.9","PM2.5":"1.1","TVOC":"96.1","CO2":"1172.8","CO":"0.0","Air
+        Pressure":"1016.0","Ozone":"8.6","NO2":"0.5","Timestamp":1570867200,"DateTime":"2019-10-12
+        04:00"},{"Temperature":"23.4","Relative Humidity":"47.7","PM2.5":"1.0","TVOC":"83.7","CO2":"1167.4","CO":"0.0","Air
+        Pressure":"1015.4","Ozone":"8.6","NO2":"0.5","Timestamp":1570870800,"DateTime":"2019-10-12
+        05:00"},{"Temperature":"23.0","Relative Humidity":"48.4","PM2.5":"1.2","TVOC":"75.2","CO2":"1178.3","CO":"0.0","Air
+        Pressure":"1015.1","Ozone":"8.7","NO2":"0.4","Timestamp":1570874400,"DateTime":"2019-10-12
+        06:00"},{"Temperature":"23.2","Relative Humidity":"52.6","PM2.5":"1.9","TVOC":"117.5","CO2":"1014.5","CO":"0.0","Air
+        Pressure":"1015.0","Ozone":"8.3","NO2":"0.5","Timestamp":1570878000,"DateTime":"2019-10-12
+        07:00"},{"Temperature":"23.9","Relative Humidity":"49.8","PM2.5":"1.6","TVOC":"54.2","CO2":"766.8","CO":"0.0","Air
+        Pressure":"1014.9","Ozone":"8.3","NO2":"0.5","Timestamp":1570881600,"DateTime":"2019-10-12
+        08:00"},{"Temperature":"23.6","Relative Humidity":"44.5","PM2.5":"1.6","TVOC":"70.8","CO2":"657.0","CO":"0.0","Air
+        Pressure":"1014.8","Ozone":"8.7","NO2":"0.4","Timestamp":1570885200,"DateTime":"2019-10-12
+        09:00"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2074'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:34 GMT
+      ETag:
+      - W/"81a-nUzkYISm3keIWqUU7+6Nzg"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AghAYj96soEB5cBXUdG6squ3QKCtru1FT.LakFw4GkH0i3VbuSgWJzfzV3FrZ9vViC04NsVFhOSDs;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+version: 1

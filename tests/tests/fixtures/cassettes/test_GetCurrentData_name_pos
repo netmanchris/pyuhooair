@@ -1,0 +1,122 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:27 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3A0XmD7HViGKyqbRflSpUhYBsaFvPLdxrB.zGlhJdgalxJwZhzjyemRfHpJAmBmiRFmTrxoBP0y5jU;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '103'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getdevicelist
+  response:
+    body:
+      string: '[{"username":"","macAddress":"606405acf799","serialNumber":"49ff70067580485640381667","deviceName":"Master
+        Bedroom uHoo","company":"HomeKit Geek"}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:28 GMT
+      ETag:
+      - W/"93-2hLDRr8NoQnthVU09mULjA"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3AOZXAzszl-QK5Mr6IlZBJZVkob9Z38QB3.5DUVct%2BPdPVwp%2B70fk2nOJP4ATlOtwMLjstfjKqbcnI;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: serialNumber=49ff70067580485640381667
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '141'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.uhooinc.com/v1/getlatestdata
+  response:
+    body:
+      string: '{"PM2.5":"1","Temperature":"23.3","Relative Humidity":"43.8","Air Pressure":"1014.1","TVOC":"71","CO2":"595","CO":"0","Ozone":"8.8","NO2":"0.4","Timestamp":1570891961,"DateTime":"2019-10-12
+        10:52"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '197'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 12 Oct 2019 14:53:29 GMT
+      ETag:
+      - W/"c5-JN+wO+vU9vZ1jVuOBAKulQ"
+      Server:
+      - uHoo
+      set-cookie:
+      - uhoo.sid=s%3ADXnrW9wK_QX2VjBp6_5qKl60slvqIYla.qIHLwI%2F%2FaQRSEymVrhC%2FU4pQL1tneOEAZTUwykzTAdM;
+        Path=/; HttpOnly
+    status:
+      code: 200
+      message: OK
+version: 1
